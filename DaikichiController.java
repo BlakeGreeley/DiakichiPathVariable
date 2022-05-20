@@ -37,5 +37,10 @@ public class DaikichiController {
 			return "<h1 style= 'color:green;'> You have enjoyed the fruits of your labor but now is a great time to spend time with family and friends</h1>";
 		}
 	}
+	
+	@RequestMapping("/favorite/{state}")
+	public String favorite(@PathVariable String state) {
+		return "Your favorite state to be in is: " + state;
+	}
 
 }
